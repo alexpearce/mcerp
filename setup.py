@@ -1,14 +1,8 @@
+from __future__ import absolute_import
+
 import os
 from setuptools import setup
 #import distutils.core
-
-## Building through 2to3, for Python 3 (see also setup(...,
-## cmdclass=...), below:
-#try:
-    #from distutils.command.build_py import build_py_2to3 as build_py
-#except ImportError:
-    ## 2.x
-    #from distutils.command.build_py import build_py
 
 import mcerp
 
@@ -32,6 +26,7 @@ setup(
         'mcerp', 
         ],
     install_requires=[
+        'six',
         'numpy', 
         'scipy', 
         'matplotlib'
@@ -70,11 +65,7 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
-        #'Programming Language :: Python :: 3',
-        #'Programming Language :: Python :: 3.0',
-        #'Programming Language :: Python :: 3.1',
-        #'Programming Language :: Python :: 3.2',
-        #'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3',
         'Topic :: Education',
         'Topic :: Scientific/Engineering',
         'Topic :: Scientific/Engineering :: Chemistry',

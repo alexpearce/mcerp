@@ -16,6 +16,8 @@ http://docs.scipy.org/doc/scipy/reference/stats.html#statistical-functions
 Author: Abraham Lee
 Copyright: 2013
 """
+from __future__ import absolute_import
+
 from mcerp import UncertainFunction
 import numpy as np
 import scipy.stats as ss

@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from six.moves import range, zip
+
 import itertools
 import numpy as np
 from scipy.stats import rankdata
@@ -173,7 +176,7 @@ def plotcorr(X, plotargs=None, full=True, labels=None):
 
     # Turn on the proper x or y axes ticks.
     if full:
-        for i, j in zip(range(numvars), itertools.cycle((-1, 0))):
+        for i, j in zip(list(range(numvars)), itertools.cycle((-1, 0))):
             axes[j,i].xaxis.set_visible(True)
             axes[i,j].yaxis.set_visible(True)
     else:

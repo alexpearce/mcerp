@@ -105,21 +105,6 @@ package (administrative privileges may be required)
 
        $ [sudo] pip install [--upgrade] mcerp
 
-Python 3
---------
-
-To use this package with Python 3.x, you will need to run the ``2to3`` 
-conversion tool at the command-line using the following syntax while in the 
-unzipped ``mcerp`` directory::
-
-    $ 2to3 -w .
-    
-This should take care of the main changes required. Then, run::
-
-    $ python3 setup.py install
-
-If bugs continue to pop up, please email the author.
-
 You can also get the bleeding-edge code from `GitHub`_ (though I can't 
 promise there won't be stability issues...).
 

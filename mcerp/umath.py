@@ -9,6 +9,8 @@ module or numpy) compatible with objects with uncertainty distributions
 Author: Abraham Lee
 Copyright: 2013
 """
+from __future__ import absolute_import
+
 from mcerp import UncertainFunction, to_uncertain_func
 import numpy as np
 
