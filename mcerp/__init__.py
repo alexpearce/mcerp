@@ -14,7 +14,11 @@ from six.moves import map, range
 
 import numpy as np
 import scipy.stats as ss
-import matplotlib.pyplot as plt
+try:
+    import matplotlib.pyplot as plt
+except ImportError:
+    import logging
+    logging.warning('Cannot import matplotlib; plotting will be unavailable')
 from . import lhd
 from . import _version
 

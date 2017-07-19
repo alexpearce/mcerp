@@ -5,7 +5,11 @@ import itertools
 import numpy as np
 from scipy.stats import rankdata
 from scipy.stats.distributions import norm
-import matplotlib.pyplot as plt
+try:
+    import matplotlib.pyplot as plt
+except ImportError:
+    import logging
+    logging.warning('Cannot import matplotlib; plotting will be unavailable')
 from . import UncertainFunction
 
 def correlate(params, corrmat):
