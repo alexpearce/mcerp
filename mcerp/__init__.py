@@ -16,11 +16,11 @@ import numpy as np
 import scipy.stats as ss
 import matplotlib.pyplot as plt
 from . import lhd
+from . import _version
 
-__version_info__ = (0, 11)
-__version__ = '.'.join(map(str, __version_info__))
-
-__author__ = 'Abraham Lee'
+# Duplicate the definition from _version to maintain API from 0.11 and below
+__version__ = _version.__version__
+__author__ = _version.__author__
 
 npts = 10000
 
